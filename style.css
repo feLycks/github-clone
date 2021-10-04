@@ -7,7 +7,7 @@
 }
 
 :root{
-    --bg-transparent: #23232E;
+    --bg-btn: #23232E;
     --bg-color: #0F0E18;
     --topNav-bg: #181823;
     --text-color: #6E7FC1;
@@ -22,38 +22,32 @@ body {
 
 .main {
     background-color:var(--bg-color) ;
-    /* padding: 0px 30px 0px 30px; */
 }
 
 .top-nav {
     justify-content: center;
-    padding: 10px 30px;
+    padding: 8px 15px;
     background-color: var(--topNav-bg);
-    /* display: flex; */
     justify-content: space-between;
-    width: 100%;
 }
-/* .left-content */
 .left-content {
     padding: 0px 10px;
     display: inline-flex
 }
 
-.left-content img {
+.fa-github {
+    color: white;
+    font-size: 26px;
+    margin: 6px 10px 0 0;
     cursor: pointer;
-    padding: 5px;
-    margin-right: 10px;
-    background-color: white;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+
 }
 
 .left-content input {
     margin-top: 5px;
     letter-spacing: .1rem;
     color: white;
-    width: 200px;
+    width: 300px;
     outline: none;
     border: 1px solid #aaa;
     padding: 3px;
@@ -132,6 +126,7 @@ body {
 /* user option  */
 
 .user-option {
+    margin: 10px 0;
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
@@ -162,6 +157,7 @@ body {
     color: white;
     font-weight: 200;
     font-size: .85rem;
+    cursor: pointer;
 }
 
 .unwatch {
@@ -173,21 +169,51 @@ body {
     border: 1px solid #aaa;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-
     padding: 3px 8px;
     font-size: .75em;
-    opacity: .8;
+    background-color: var(--bg-btn);
 }
 
 .un-one i {
-    margin:0px 3px;
+    margin:0px 5px;
 }
 .num {
     background-color: transparent;
     border: 1px solid #aaa;
-    padding: 0px 3px;
+    padding: 2px 5px;
     color: #aaa;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     margin-left: -1px;
+}
+
+.star {
+    margin: 0px 4px;
+}
+
+/* repo menu  */
+.repo-menu {
+    padding: 0px 30px;
+    color: white;
+}
+
+.repo-menu ul li {
+    font-weight: 220;
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none;
+    font-size: .8em;
+    padding: 0px 30px 20px 20px;
+    cursor: pointer;
+}
+
+.repo-menu ul li i {
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#active {
+    margin-left: -18px;
+    border-bottom: 2px solid var(--bg-btn);
 }
