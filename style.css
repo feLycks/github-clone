@@ -7,9 +7,10 @@
 }
 
 :root{
+    --bg-transparent: #23232E;
     --bg-color: #0F0E18;
     --topNav-bg: #181823;
-    --sec-nav-color: #6E7FC1;
+    --text-color: #6E7FC1;
     --help-bg:#1D143D;
     --btn-color:#119B1A;
     --input-bg:#0F0E18;
@@ -21,13 +22,16 @@ body {
 
 .main {
     background-color:var(--bg-color) ;
+    /* padding: 0px 30px 0px 30px; */
 }
 
 .top-nav {
-    padding: 5px 0px;
+    justify-content: center;
+    padding: 10px 30px;
     background-color: var(--topNav-bg);
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
+    width: 100%;
 }
 /* .left-content */
 .left-content {
@@ -36,17 +40,31 @@ body {
 }
 
 .left-content img {
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 50%;
     width: 2rem;
     height: 2rem;
 }
 
 .left-content input {
+    margin-top: 5px;
+    letter-spacing: .1rem;
+    color: white;
     width: 200px;
     outline: none;
-    border: 1px solid #eee;
+    border: 1px solid #aaa;
     padding: 3px;
-    border-radius: 60px;
+    height: 1.6rem;
+    border-radius: 10px;
     background-color: var(--input-bg);
+}
+
+.left-content input::placeholder {
+    color: white;
+    font-size: .7rem;
 }
 
 .left-content ul li {
@@ -61,6 +79,8 @@ body {
 
 /* right-container  */
 .right-content {
+    float: right;
+    justify-content: left;
     display: inline-flex;
 }
 
@@ -107,4 +127,67 @@ body {
 
 .fa-bell {
     font-size: .75;
+}
+
+/* user option  */
+
+.user-option {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.user-info {
+    cursor: pointer;
+    display: inline-flex;
+    color: var(--text-color);
+}
+
+#repo {
+    font-weight: bold;
+}
+
+#public {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #aaa;
+    color: #aaa;
+    padding: 3px 12px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: .55em;
+}
+
+.more-option {
+    display: inline-flex;
+    color: white;
+    font-weight: 200;
+    font-size: .85rem;
+}
+
+.unwatch {
+    display: inline-flex;
+}
+
+.un-one {
+    display: inline-flex;
+    border: 1px solid #aaa;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+    padding: 3px 8px;
+    font-size: .75em;
+    opacity: .8;
+}
+
+.un-one i {
+    margin:0px 3px;
+}
+.num {
+    background-color: transparent;
+    border: 1px solid #aaa;
+    padding: 0px 3px;
+    color: #aaa;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: -1px;
 }
