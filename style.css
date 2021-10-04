@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #0F0E18;
+    --topNav-bg: #181823;
+    --sec-nav-color: #6E7FC1;
+    --help-bg:#1D143D;
+    --btn-color:#119B1A;
+    --input-bg:#0F0E18;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+    background-color:var(--bg-color) ;
+}
+
+.top-nav {
+    padding: 5px 0px;
+    background-color: var(--topNav-bg);
+    display: flex;
+    justify-content: space-between;
+}
+/* .left-content */
+.left-content {
+    padding: 0px 10px;
+    display: inline-flex
+}
+
+.left-content img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.left-content input {
+    width: 200px;
+    outline: none;
+    border: 1px solid #eee;
+    padding: 3px;
+    border-radius: 60px;
+    background-color: var(--input-bg);
+}
+
+.left-content ul li {
+    display: inline-flex;
+    color: white;
+    padding: 10px;
+    font-size: .75rem;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* right-container  */
+.right-content {
+    display: inline-flex;
+}
+
+.right-content i{
+    cursor: pointer;
+    display: inline-flex;
+    color: white;
+    padding: 10px;
+}
+
+.create {
+    display: inline-flex;
+}
+.create > .fa-caret-down {
+    margin-left: -15px;
+    font-size: .75rem;
+
+}
+.user {
+    display: inline-flex;
+}
+
+.user img {
+    cursor: pointer;
+    width: 1.5rem;
+    margin: 5px 0px;
+    height: 1.5rem;
+    font-size: .75rem;
+    border-radius: 50%;
+}
+
+.user > .fa-caret-down{
+    margin-left: -5px;
+    font-size: .75rem;
+}
+
+.fa-caret-down {
+    margin-top: 10  px;
+}
+
+.fa-plus {
+    font-size: .75rem;
+}
+
+.fa-bell {
+    font-size: .75;
+}
