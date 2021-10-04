@@ -218,7 +218,7 @@ body {
 #active {
     border-bottom: 1px solid orange;
     margin-left: -18px;
-    border-bottom: 2px solid var(--bg-btn);
+    border-bottom: 2px solid #0c0c0c;
 }
 
 /* content  */
@@ -233,7 +233,8 @@ body {
 }
 
 .master-menu {
-    display: inline-flex;
+    justify-content: space-between;
+    display: flex;
     cursor: pointer;
 }
 
@@ -260,6 +261,7 @@ body {
 .mast-cont  p {
     margin-top: 7px;
 }
+
 
 .branch {
     color: white;
@@ -295,30 +297,53 @@ body {
 .tag p {
     margin-top: 7px;
 }
-
-/* .sub-content */
-.sub-content {
-    width: 30%;
-    height: auto;
+.new-file {
     display: inline-flex;
     color: white;
-    font-size: .8rem;
+}
+.add-file  p {
+    margin-top: 5px;
 }
 
-#go-to, .add-file{
+.add-file i {
+    margin: 6px 0px 0px 4px;
+}
+
+#go-to {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px 7px;
+    margin-right: 8px;
+    text-align: center;
+    font-size: .75rem;
+    opacity: .5;
+}
+.add-file{
+    opacity: .5;
+    display: inline-flex;
+    text-align: center;
     border: 1px solid #aaa;
     border-radius: 5px;
     padding: 3px 7px;
-}
-
-.add-file, .code{
-    display: inline-flex;
+    margin-right: 8px;
+    font-size: .75rem;
 }
 
 .code {
-    font-size: .8rem;
+    text-align: center;
+    display: inline-flex;
+    font-size: .75rem;
     color: white;
-    padding: 3px 5px;
+    cursor: pointer;
+    padding: 3px 8px;
     background-color: var(--btn-color);
     border-radius: 5px;
+}
+
+.code  p {
+    margin: 5px 0px;
+}
+
+.code i {
+    margin: 6px;
 }
