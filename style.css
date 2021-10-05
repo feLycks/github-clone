@@ -198,6 +198,7 @@ body {
     border-bottom: 1px solid #aaa;
 }
 
+
 .repo-menu ul li {
     font-weight: 220;
     display: inline-flex;
@@ -224,8 +225,13 @@ body {
 .content {
     padding: 30px 120px;
     display: flex;
-    border-bottom: 1px solid #aaa;
+    /* border-bottom: 1px solid #aaa; */
     /* justify-content: space-evenly; */
+}
+
+hr {
+    opacity: .1;
+    margin: 60px 200px 10px 120px;
 }
 /* .main-content  */
 .main-content {
@@ -358,8 +364,18 @@ body {
 }
 
 .top-sub {
-    display: inline-flex;
+    /* font-family: 'Times New Roman', Times, serif; */
+    display: flex;
     justify-content: space-between;
+}
+
+.top-sub p{
+    font-size: .85rem;
+    cursor: pointer;
+}
+.top-sub i {
+    opacity: .5;
+    cursor: pointer;
 }
 
 #abt-descr {
@@ -372,19 +388,97 @@ body {
 
 #release {
     padding: 20px 0px;
+    cursor: pointer;
 }
 
 .rel {
+    cursor: pointer;
     padding-bottom: 20px;
     border-bottom: 1px solid #aaa;
 }
 #p1, #p2{
     font-size: .8rem;
+    cursor: pointer;
 }
 
 #p2 small {
     color: var(--text-color) !important;
 }
+
+
+/* table-content  */
+.table-content {
+    color: white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.top-table {
+    background-color: #161b22;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.default-set {
+    display: inline-flex;
+    font-size: .7em;
+}
+
+#span-usr {
+    font-weight: 450;
+}
+.default-set p {
+    margin-left: 10px;
+    font-weight: 300;
+}
+.default-set img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.repo-info {
+    display: inline-flex;
+    font-size: .7em;
+    font-weight: 300;
+}
+
+.repo-info p {
+    padding: 0px 8px;
+}
+
+.repo-info i {
+    opacity: .5;
+    margin-right: 5px;
+}
+em {
+    margin: 0px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     display:flex;
@@ -409,3 +503,4 @@ footer {
 .img-logo {
     margin-top: -12px;
 }
+
