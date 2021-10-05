@@ -143,7 +143,7 @@ body {
 #public {
     cursor: pointer;
     background-color: transparent;
-    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
+    border: 1px solid rgba(56, 56, 56, 0.5);
     color: #aaa;
     padding: 3px 12px;
     margin-left: 10px;
@@ -165,7 +165,7 @@ body {
 
 .un-one {
     display: inline-flex;
-    border: 1px solid #aaa;
+    border: 1px solid rgba(56, 56, 56, 0.5);
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     padding: 3px 8px;
@@ -178,7 +178,8 @@ body {
 }
 .num {
     background-color: transparent;
-    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
+    /* border: 1px solid rgba(56, 56, 56, 0.5); */
+    border: 1px solid rgba(56, 56, 56, 0.5);
     padding: 2px 5px;
     color: #aaa;
     border-bottom-right-radius: 5px;
