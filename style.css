@@ -48,7 +48,7 @@ body {
     color: white;
     width: 250px;
     outline: none;
-    border: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
     padding: 3px;
     height: 1.6rem;
     border-radius: 5px;
@@ -143,7 +143,7 @@ body {
 #public {
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
     color: #aaa;
     padding: 3px 12px;
     margin-left: 10px;
@@ -178,7 +178,7 @@ body {
 }
 .num {
     background-color: transparent;
-    border: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
     padding: 2px 5px;
     color: #aaa;
     border-bottom-right-radius: 5px;
@@ -195,7 +195,7 @@ body {
     margin-bottom: 5px;
     padding: 0px 30px;
     color: white;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5)
 }
 
 
@@ -225,8 +225,7 @@ body {
 .content {
     padding: 30px 120px;
     display: flex;
-    /* border-bottom: 1px solid #aaa; */
-    /* justify-content: space-evenly; */
+    /* border-bottom: 1px solid rgba(56, 56, 56, 0.5); */
 }
 
 hr {
@@ -318,7 +317,7 @@ hr {
 }
 
 #go-to {
-    border: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
     border-radius: 5px;
     padding: 5px 7px;
     margin-right: 8px;
@@ -330,7 +329,7 @@ hr {
     opacity: .5;
     display: inline-flex;
     text-align: center;
-    border: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
     border-radius: 5px;
     padding: 3px 7px;
     margin-right: 8px;
@@ -383,7 +382,7 @@ hr {
     font-weight: 250;
     font-size: .9rem;
     padding: 10px 0px 40px 0px;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5);
 }
 
 #release {
@@ -394,7 +393,7 @@ hr {
 .rel {
     cursor: pointer;
     padding-bottom: 20px;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5)
 }
 #p1, #p2{
     font-size: .8rem;
@@ -409,7 +408,7 @@ hr {
 /* table-content  */
 .table-content {
     color: white;
-    border: 1px solid #aaa;
+    border: 1px solid rgba(56, 56, 56, 0.5);
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -449,7 +448,7 @@ hr {
 }
 
 .repo-info i {
-    opacity: .5;
+    opacity: .9;
     margin-right: 5px;
 }
 em {
@@ -457,29 +456,55 @@ em {
 }
 
 
+/* commits  */
 
+.row-coms{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 8px;
+    font-size: .8em;
+    font-weight: 200;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.5)
+}
 
+.notes i{
+    opacity: .8;
+    margin-right: 5px;
+}
 
+.row-coms:hover {
+    opacity: .8;
+}
 
+#cont {
+    margin-left: 40px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.add-redMe {
+    border-radius: 5px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font-size: .8em;
+    padding: 10px;
+    margin-top: 15px;
+    /* background-color: var(--text-color); */
+    border: 1px solid rgba(56, 139, 259, 0.4)
+}
+.add-redMe p {
+    font-weight: 280;
+}
+.add-readme {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: .7;
+    cursor: pointer;
+    color: white;
+    background-color: var(--btn-color);
+}
 footer {
     display:flex;
     padding: 30px 120px;
